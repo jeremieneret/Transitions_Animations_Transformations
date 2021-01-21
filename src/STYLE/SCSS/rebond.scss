@@ -1,0 +1,62 @@
+@import '../tools/imports.scss';
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: $Lato;
+    color: white;
+    background: rgb(26, 26, 39);
+}
+
+main {
+    width: 80%;
+}
+
+.exo5 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(255, 138, 138);
+    transform: translateY(150px);
+    animation: rebond 1.5s linear 1s forwards;
+}
+
+@keyframes rebond {
+    0% {
+        transform: translateY(150px);
+    }
+    10% {
+        transform: translate(100px, 0);
+    }
+    25% {
+        transform: translate(250px, 600px);
+    }
+    35% {
+        transform: translate(350px, 485px);
+    }
+    45% {
+        transform: translate(450px, 600px);
+    }
+    55% {
+        transform: translate(550px, 555px);
+    }
+    65% {
+        transform: translate(650px, 600px);
+    }
+    75% {
+        transform: translate(750px, 580px);
+    }
+    85% {
+        transform: translate(850px, 600px);
+    }
+    95% {
+        transform: translate(900px, 600px);
+    }
+    100% {
+        transform: translate(900px, 600px);
+    }
+
+}
